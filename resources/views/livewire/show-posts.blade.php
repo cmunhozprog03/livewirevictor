@@ -10,9 +10,10 @@
         <!-- This example requires Tailwind CSS v2.0+ -->
         <x-table>
 
-            <div class="px-6 py-4">
+            <div class="px-6 py-4 flex items-center">
                 {{-- <inputtype="text"wire:model="search"> --}} 
-                <x-jet-input placeholder="Burcar..." class="w-full" type="text" wire:model="search" />
+                <x-jet-input placeholder="Burcar..." class="flex-1 mr-4" type="text" wire:model="search" />
+                @livewire('create-post')
             </div>
 
             @if ($posts->count())
